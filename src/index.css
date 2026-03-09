@@ -1,1 +1,35 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@theme {
+  /* --- FONT --- */
+  --font-inter: "Inter", sans-serif;
+ 
+  /* --- ANA RENKLER */
+  --color-main-dark: #1f2937; /* Başlıklar ve ana metin ve footerdaki "LETS WORK" alanı */
+  --color-deep-purple: #3730a3; /* Genel mor tonu - indigolar - */
+  --color-indigo: #4338ca; /* Java Script React.js vb. yazılar, h3 olabilir */
+  --color-dim-gray: #6b7280; /* Silik yazılar/açıklamalar */
+
+  /* --- YARDIMCI RENKLER --- */
+  --color-light-gray: #777777; /* Dark mode ve 'YE GEÇ kısmı */
+  --color-brand-purple: #4731d3; /* Dark mode buton arka planı ve Türkçe kısmı,  */
+  --color-accent-yellow: #ffe86e; /* Sarı darkmode butonu */
+  --color-soft-purple: #eeebff; /* Açık eflatun/ sol üst "A" arkaplanı */
+  --color-brand-red: #af0c48; /* Email rengi */
+  --color-brand-green: #00ab6b; /* Github yeşili */
+  --color-brand-blue: #0077b5; /* Linkedin mavisi */
+  --color-brand-dark: #0a0a14; /* Personal Blog rengi */
+}
+
+
+body {
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Sayfa geçişleri için yumuşak kaydırma */
+html {
+  scroll-behavior: smooth;
+}
