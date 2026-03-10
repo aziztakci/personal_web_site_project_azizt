@@ -6,22 +6,22 @@ function Header() {
 
   return (
     <header
-      className={`max-w-[1440px] mx-auto flex flex-col gap-[38px] pl-[25px] pr-[50px] md:pl-[125px] md:pr-[175px] ${theme === "dark" ? "bg-[#1F2937]" : "bg-white"}`}
+      className={`max-w-360 mx-auto flex flex-col gap-9.5 pl-6.25 pr-12.5 md:pl-31.25 md:pr-43.75 ${theme === "dark" ? "bg-[#1F2937]" : "bg-white"}`}
     >
-      <div className="flex items-center gap-[10px] self-end mt-[30px]">
+      <div className="flex items-center gap-2.5 self-end mt-7.5">
         <button
           onClick={toggleTheme}
-          className="relative w-[55px] h-[24px] bg-[var(--color-brand-purple)] rounded-full cursor-pointer transition-all duration-300"
+          className="relative w-13.75 h-6 bg-brand-purple rounded-full cursor-pointer transition-all duration-300"
         >
           <div
-            className={`absolute top-[4px] w-[15px] h-[15px] bg-[var(--color-accent-yellow)] rounded-full transition-all duration-300 
-            ${theme === "light" ? "left-[5px]" : "left-[35px]"}`}
+            className={`absolute top-1 w-3.75 h-3.75 bg-accent-yellow rounded-full transition-all duration-300 
+            ${theme === "light" ? "left-1.25" : "left-8.75"}`}
           ></div>
         </button>
 
         <span
           onClick={toggleTheme}
-          className="text-[var(--color-light-gray)] text-[15px] font-bold cursor-pointer select-none"
+          className="text-light-gray text-[15px] font-bold cursor-pointer select-none"
         >
           {lang === "en"
             ? theme === "light"
@@ -32,45 +32,50 @@ function Header() {
               : "GÜNDÜZ MODU"}
         </span>
 
-        <span className="text-[var(--color-light-gray)] mx-2 font-bold">|</span>
+        <span className="text-light-gray mx-2 font-bold">|</span>
 
         <span
           onClick={toggleLang}
-          className="text-[var(--color-light-gray)] text-[15px] font-bold cursor-pointer select-none"
+          className="text-light-gray text-[15px] font-bold cursor-pointer select-none"
         >
           {lang === "en" ? (
             <>
-              <span className="text-[var(--color-brand-purple)]">TÜRKÇE</span>
+              <span className="text-brand-purple">TÜRKÇE</span>
               'YE GEÇ
             </>
           ) : (
             <>
-              <span className="text-[var(--color-brand-purple)]">ENGLISH</span>
+              <span className="text-brand-purple">ENGLISH</span>
             </>
           )}
         </span>
       </div>
 
       <div className="flex justify-between items-center w-full">
-        <div className="w-[62px] h-[62px] bg-[var(--color-soft-purple)] rounded-full flex items-center justify-center">
-          <span className="text-[#7B61FF] font-bold text-2xl inline-block rotate-[30deg]">
+        <div className="w-15.5 h-15.5 bg-soft-purple rounded-full flex items-center justify-center">
+          <span className="text-[#7B61FF] font-bold text-2xl inline-block rotate-30">
             A
           </span>
         </div>
 
-        <nav className="flex gap-[30px] md:gap-[75px] items-center">
-          <span className={`font-medium text-lg cursor-pointer ${theme==="light" ? "text-[var(--color-dim-gray)]" : "text-[#eeebff]"}`}>
+        <nav className="flex gap-7.5 md:gap-18.75 items-center">
+          <span
+            className={`font-medium text-lg cursor-pointer ${theme === "light" ? "text-dim-gray" : "text-soft-purple"}`}
+          >
             {lang === "en" ? "Skills" : "Beceriler"}
           </span>
-          <span className={`font-medium text-lg cursor-pointer ${theme==="light" ? "text-[var(--color-dim-gray)]" : "text-[#eeebff]"}`}>
+          <span
+            className={`font-medium text-lg cursor-pointer ${theme === "light" ? "text-dim-gray" : "text-soft-purple"}`}
+          >
             {lang === "en" ? "Projects" : "Projeler"}
           </span>
           <button
-            className={` border-2 px-[32px] py-[12px] rounded-md font-bold text-lg cursor-pointer 
-                ${theme === "light" ? 
-                "text-[var(--color-brand-purple)] hover:bg-[var(--color-brand-purple)] hover:text-[#eeebff] transition-colors  border-[var(--color-brand-purple)]" : 
-                "text-[#eeebff] hover:bg-[#eeebff] hover:text-[#1F2937] transition-colors  border-[#eeebff]"}`
-                 }
+            className={` border-2 px-8 py-3 rounded-md font-bold text-lg cursor-pointer 
+                ${
+                  theme === "light"
+                    ? "text-brand-purple hover:bg-brand-purple hover:text-soft-purple transition-colors  border-brand-purple"
+                    : "text-soft-purple hover:bg-soft-purple hover:text-[#1F2937] transition-colors  border-soft-purple"
+                }`}
           >
             {lang === "en" ? "Hire me" : "Beni işe al"}
           </button>
