@@ -1,11 +1,19 @@
+
 import Header from "./components/Header";
+import Hero from "./components/Hero";
 import SiteContextProvider from "./contexts/SiteContext";
 
+
+
+
 function App() {
+  
   return (
-    <SiteContextProvider>
+    <SiteContextProvider >
+      
       <Header />
-      {/*<Hero />
+      <Hero />
+      {/*
       <Skills />
       <Profile />
       <Projects />

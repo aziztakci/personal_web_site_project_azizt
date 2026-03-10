@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <header
-      className={`max-w-360 mx-auto flex flex-col gap-9.5 pl-6.25 pr-12.5 md:pl-31.25 md:pr-43.75 ${theme === "dark" ? "bg-[#1F2937]" : "bg-white"}`}
+      className="flex flex-col gap-9.5"
     >
       <div className="flex items-center gap-2.5 self-end mt-7.5">
         <button
@@ -15,7 +15,7 @@ function Header() {
         >
           <div
             className={`absolute top-1 w-3.75 h-3.75 bg-accent-yellow rounded-full transition-all duration-300 
-            ${theme === "light" ? "left-1.25" : "left-8.75"}`}
+            ${theme === "dark" ? "left-1.25" : "left-8.75"}`}
           ></div>
         </button>
 
@@ -70,7 +70,7 @@ function Header() {
             {lang === "en" ? "Projects" : "Projeler"}
           </span>
           <button
-            className={` border-2 px-8 py-3 rounded-md font-bold text-lg cursor-pointer 
+            className={` border px-8 py-3 rounded-md font-bold text-lg cursor-pointer 
                 ${
                   theme === "light"
                     ? "text-brand-purple hover:bg-brand-purple hover:text-soft-purple transition-colors  border-brand-purple"
