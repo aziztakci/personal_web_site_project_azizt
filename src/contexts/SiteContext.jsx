@@ -27,7 +27,7 @@ const SiteContextProvider = ({ children }) => {
 
   return (
     <SiteContext.Provider value={values}>
-      <div className={theme === "dark" ? "bg-background-dark" : "bg-white"}>
+      <div className={`min-w-160 ${theme === "dark" ? "bg-background-dark" : "bg-white"}`}>
         <div className="max-w-360 mx-auto pl-31.25 pr-43.75 ">{children}</div>
       </div>
     </SiteContext.Provider>

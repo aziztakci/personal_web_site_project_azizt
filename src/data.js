@@ -21,9 +21,10 @@ export const data = {
     skillsSection: {
       title: "Skills",
       skills: [
-        { name: "Java Script" },
-        { name: "React.Js" },
-        { name: "Node.Js" },
+        { name: "Java Script", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+        { name: "React.Js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+        { name: "Node.Js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+        
       ],
     },
     profileSection: {
@@ -94,9 +95,9 @@ export const data = {
     skillsSection: {
       title: "Yetenekler",
       skills: [
-        { name: "Java Script" },
-        { name: "React.Js" },
-        { name: "Node.Js" },
+         { name: "Java Script", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+        { name: "React.Js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+        { name: "Node.Js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
       ],
     },
     profileSection: {

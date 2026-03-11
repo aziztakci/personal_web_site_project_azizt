@@ -6,7 +6,7 @@ function Hero() {
   const heroData = siteData[lang].heroSection;
 
   return (
-    <div className="flex flex-col xl:flex-row items-center justify-between w-full gap-17 mt-[40px] xl:mt-23.25">
+    <div className="flex flex-col xl:flex-row items-center justify-between w-full gap-17 mt-10 xl:mt-23.25">
       <div className="flex flex-col order-2 xl:order-1 gap-10">
         <div className="flex items-center gap-2.5">
           <div className={`w-25.5 h-0.5 ${theme === "light" 
@@ -21,19 +21,19 @@ function Hero() {
           </span>
         </div>
         <div className="flex flex-col">
-          <h1 className={`font-bold leading-none tracking-[0.3px] text-[40px] sm:text-[50px] xl:text-[72px] md:text-right xl:text-left ${
+          <h1 className={`font-bold leading-none tracking-[0.3px] text-[40px] text-center sm:text-[50px] xl:text-[72px] md:text-right xl:text-left ${
             theme === "light" ? "text-main-dark" : "text-main-gray"
           }`}>
             {heroData.greeting}
           </h1>
-          <h1 className={`font-bold leading-none tracking-[0.3px] text-[40px] sm:text-[50px] xl:text-[72px] md:text-right xl:text-left ${
+          <h1 className={`font-bold leading-none tracking-[0.3px] text-[40px] text-center sm:text-[50px] xl:text-[72px] md:text-left xl:text-left ${
             theme === "light" ? "text-main-dark" : "text-main-gray"
           }`}>
             {heroData.intro}
           </h1>
         </div>
 
-        <p className={`text-lg tracking-[0.3px] md:text-center xl:text-left xl:mr-15 ${theme === "light" 
+        <p className={`text-lg tracking-[0.3px] text-center xl:text-left xl:mr-15 ${theme === "light" 
             ? "text-dim-gray" 
             : "text-pure-white"
         }`}>{heroData.ctaHTML}</p>
