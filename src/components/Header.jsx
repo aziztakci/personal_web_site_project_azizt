@@ -5,7 +5,7 @@ function Header() {
   const { lang, toggleLang, theme, toggleTheme } = useContext(SiteContext);
 
   return (
-    <header className="flex flex-col gap-9.5">
+    <header className="flex flex-col gap-9.5 max-w-360 mx-auto pl-31.25 pr-43.75">
       <div className="flex items-center self-end gap-2.5 mt-7.5">
         <button
           onClick={toggleTheme}

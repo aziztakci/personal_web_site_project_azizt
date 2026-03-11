@@ -6,7 +6,7 @@ function Hero() {
   const heroData = siteData[lang].heroSection;
 
   return (
-    <div className="flex flex-col xl:flex-row items-center justify-between w-full gap-17 mt-10 xl:mt-23.25">
+    <div className="flex flex-col xl:flex-row items-center justify-between w-full gap-17 mt-10 xl:mt-23.25 max-w-360 mx-auto pl-31.25 pr-43.75">
       <div className="flex flex-col order-2 xl:order-1 gap-10">
         <div className="flex items-center gap-2.5">
           <div className={`w-25.5 h-0.5 ${theme === "light" 

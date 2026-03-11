@@ -6,7 +6,7 @@ function Skills() {
   const skillsData = siteData[lang].skillsSection;
 
   return (
-    <div>
+    <div className="max-w-360 mx-auto pl-31.25 pr-43.75">
       <h2
         className={`text-5xl font-semibold text-center lg:text-left mt-31.25 mb-8.75 ${
           theme === "light" ? "text-main-dark " : "text-main-gray"

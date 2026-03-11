@@ -6,7 +6,7 @@ function Profile() {
   const profileData = siteData[lang].profileSection;
 
   return (
-    <div>
+    <div className="max-w-360 mx-auto pl-31.25 pr-43.75">
       <div className="w-[99.47%] ml-auto h-0.5 mt-10.5 bg-light-purple"></div>
       <h2
         className={`text-5xl font-semibold text-center lg:text-left mt-10 mb-8.75 ${

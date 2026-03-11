@@ -6,6 +6,7 @@ import linkedinDark from "./assets/images/linkedinDark.svg";
 import project1 from "./assets/images/project1.svg";
 import project2 from "./assets/images/project2.svg";
 import project3 from "./assets/images/project3.svg";
+import pointed from "./assets/images/point.png";
 
 
 export const data = {
@@ -77,11 +78,13 @@ export const data = {
     },
     footerSection: {
       title: "Let's work together on your next product.",
+      image: pointed,
       email: "almilasuccode@gmail.com",
       links: [
-        { name: "Personal Blog" },
-        { name: "Github" },
-        { name: "Linkedin" },
+        { name: "Personal Blog", color: "text-brand-dark", colorDark: "text-deep-gray", url: "#" },
+        { name: "Github", color: "text-brand-green", colorDark: "text-brand-green-light", url: "#"  },
+        { name: "Linkedin", color: "text-brand-blue", colorDark: "text-light-blue", url: "#"  },
+        
       ],
     },
   },
@@ -153,11 +156,12 @@ export const data = {
     },
     footerSection: {
       title: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
+      image: pointed,
       email: "almilasuccode@gmail.com",
       links: [
-        { name: "Kişisel Blog" },
-        { name: "Github" },
-        { name: "Linkedin" },
+        { name: "Kişisel Blog", color: "text-brand-dark", colorDark: "text-deep-gray", url: "#" },
+        { name: "Github", color: "text-brand-green", colorDark: "text-brand-green-light", url: "#" },
+        { name: "Linkedin", color: "text-brand-blue", colorDark: "text-light-blue", url: "#" },
       ],
     },
   },

@@ -10,6 +10,7 @@
   --color-deep-purple: #3730a3; /* Genel mor tonu - indigolar - */
   --color-indigoo: #4338ca; /* Java Script React.js vb. yazılar, h3 olabilir */
   --color-dim-gray: #6b7280; /* Silik yazılar/açıklamalar */
+  --color-footer-gray: #F9F9F9; /*Footer arka planı */
 
   /* --- YARDIMCI RENKLER --- */
   --color-light-gray: #777777; /* Dark mode ve 'YE GEÇ kısmı */
@@ -26,6 +27,7 @@
   --color-deep-gray: #E1E1FF; /* Genel mor tonu - indigolar - */
   --color-indigoo-subtle: #B7AAFF; /* Java Script React.js vb. yazılar, h3 olabilir */
   --color-pure-white: #FFFF; /* Silik yazılar/açıklamalar */
+  --color-footer-dark: #141414; /*Footer arka planı */
   
 
   /* ---DARK MODE YARDIMCI RENKLER --- */
