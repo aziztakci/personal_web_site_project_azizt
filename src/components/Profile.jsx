@@ -29,7 +29,7 @@ function Profile() {
         <div className="flex flex-col gap-5 mt-5">
           {profileData.profile.map((e, index) => (
             <div key={`profile-row-${index}`} className="flex gap-5">
-              <h4 className={`font-semibold text-lg font-semibold w-39 shrink-0 ${theme==="light" ?
+              <h4 className={`font-semibold text-lg w-39 shrink-0 ${theme==="light" ?
                 "text-pure-black":
                 "text-pure-white"
               } `}>{e.label}</h4>

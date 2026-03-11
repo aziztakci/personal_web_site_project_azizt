@@ -3,6 +3,10 @@ import github from "./assets/images/github.svg";
 import linkedin from "./assets/images/linkedin.svg";
 import githubDark from "./assets/images/githubDark.svg";
 import linkedinDark from "./assets/images/linkedinDark.svg";
+import project1 from "./assets/images/project1.svg";
+import project2 from "./assets/images/project2.svg";
+import project3 from "./assets/images/project3.svg";
+
 
 export const data = {
   en: {
@@ -24,7 +28,7 @@ export const data = {
         { name: "Java Script", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
         { name: "React.Js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
         { name: "Node.Js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
-        
+
       ],
     },
     profileSection: {
@@ -47,24 +51,27 @@ export const data = {
       projects: [
         {
           name: "Workintech",
-          image: "project-1.jpg", //TODO
+          image: project1,
           description:
             "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
           tags: ["react", "redux", "axios"],
+          links: ["Github", "View Site"],
         },
         {
           name: "Random Jokes",
-          image: "project-2.jpg", //TODO
+          image: project2,
           description:
             "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
           tags: ["react", "redux", "axios"],
+          links: ["Github", "View Site"],
         },
         {
           name: "Journey",
-          image: "project-3.jpg", //TODO
+          image: project3,
           description:
             "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
           tags: ["react", "redux", "axios"],
+          links: ["Github", "View Site"],
         },
       ],
     },
@@ -95,7 +102,7 @@ export const data = {
     skillsSection: {
       title: "Yetenekler",
       skills: [
-         { name: "Java Script", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
+        { name: "Java Script", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
         { name: "React.Js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
         { name: "Node.Js", description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
       ],
@@ -120,24 +127,27 @@ export const data = {
       projects: [
         {
           name: "Workintech",
-          image: "project-1.jpg", //TODO
+          image: project1,
           description:
-            "Kullanıcıların hangi çerezleri kabul edip reddedeceğini seçmesine izin veren basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur, ayrıca git deposu kod ve tema üzerinde her türlü özelleştirmeyi mümkün kılar.",
+            "Kullanıcılarınızın hangi çerezleri kabul edip hangilerini reddedeceğini seçmesine olanak tanıyan; basit, özelleştirilebilir ve minimal kuruluma sahip bir çerez eklentisidir. Vanilla JS, SCSS ve Parcel Bundler ile geliştirilen bu proje, hem bir NPM paketi olarak sunulmakta hem de Git deposu üzerinden kod ve tema üzerinde her türlü özelleştirmeye imkan tanımaktadır.",
           tags: ["react", "redux", "axios"],
+          links: ["Github", "Siteye Git"],
         },
         {
           name: "Random Jokes",
-          image: "project-2.jpg", //TODO
+          image: project2,
           description:
-            "Kullanıcıların hangi çerezleri kabul edip reddedeceğini seçmesine izin veren basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur, ayrıca git deposu kod ve tema üzerinde her türlü özelleştirmeyi mümkün kılar.",
+            "Kullanıcılarınızın hangi çerezleri kabul edip hangilerini reddedeceğini seçmesine olanak tanıyan; basit, özelleştirilebilir ve minimal kuruluma sahip bir çerez eklentisidir. Vanilla JS, SCSS ve Parcel Bundler ile geliştirilen bu proje, hem bir NPM paketi olarak sunulmakta hem de Git deposu üzerinden kod ve tema üzerinde her türlü özelleştirmeye imkan tanımaktadır.",
           tags: ["react", "redux", "axios"],
+          links: ["Github", "Siteye Git"],
         },
         {
           name: "Journey",
-          image: "project-3.jpg", //TODO
+          image: project3,
           description:
-            "Kullanıcıların hangi çerezleri kabul edip reddedeceğini seçmesine izin veren basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur ve bir NPM paketi olarak mevcuttur, ayrıca git deposu kod ve tema üzerinde her türlü özelleştirmeyi mümkün kılar.",
+            "Kullanıcılarınızın hangi çerezleri kabul edip hangilerini reddedeceğini seçmesine olanak tanıyan; basit, özelleştirilebilir ve minimal kuruluma sahip bir çerez eklentisidir. Vanilla JS, SCSS ve Parcel Bundler ile geliştirilen bu proje, hem bir NPM paketi olarak sunulmakta hem de Git deposu üzerinden kod ve tema üzerinde her türlü özelleştirmeye imkan tanımaktadır.",
           tags: ["react", "redux", "axios"],
+          links: ["Github", "Siteye Git"],
         },
       ],
     },
