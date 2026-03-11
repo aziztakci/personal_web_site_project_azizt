@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { SiteContext } from "../contexts/SiteContext";
 
 function Hero() {
-  const { siteData, lang, theme } = useContext(SiteContext);
+  const { siteData, lang, theme, scrollToSection } = useContext(SiteContext);
   const heroData = siteData[lang].heroSection;
 
   return (
@@ -39,7 +39,7 @@ function Hero() {
         }`}>{heroData.ctaHTML}</p>
 
         <div className="flex flex-col md:flex-row item-center justify-between xl:justify-start gap-3">
-          <button className={`border px-8 py-3 rounded-md font-bold text-lg cursor-pointer transition-colors ${theme === "light" 
+          <button onClick={()=>scrollToSection("footer")} className={`border px-8 py-3 rounded-md font-bold text-lg cursor-pointer transition-colors ${theme === "light" 
               ? "text-soft-purple bg-brand-purple border-brand-purple hover:bg-deep-purple hover:text-white" 
               : "text-pure-black bg-deep-gray border-brand-purple hover:bg-deep-purple hover:text-white"
           }`}>

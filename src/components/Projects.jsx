@@ -6,7 +6,7 @@ function Projects() {
     const { siteData, lang, theme } = useContext(SiteContext);
       const projectsData = siteData[lang].projectsSection;
   return (
-    <div className='mb-35 max-w-360 mx-auto pl-31.25 pr-43.75'>
+    <div id="projects" className='mb-35 max-w-360 mx-auto pl-31.25 pr-43.75'>
         <div className="w-[99.47%] ml-auto h-0.5 mt-10.5 bg-light-purple"></div>
         <h2 className={`text-5xl font-semibold text-center lg:text-left mt-10 mb-8.75 ${
           theme === "light" ? "text-main-dark " : "text-main-gray"

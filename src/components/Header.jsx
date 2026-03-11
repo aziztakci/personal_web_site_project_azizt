@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import { SiteContext } from "../contexts/SiteContext";
 
 function Header() {
-  const { lang, toggleLang, theme, toggleTheme } = useContext(SiteContext);
+  const { lang, toggleLang, theme, toggleTheme, scrollToSection } = useContext(SiteContext);
+
 
   return (
-    <header className="flex flex-col gap-9.5 max-w-360 mx-auto pl-31.25 pr-43.75">
+    <header id="header" className="flex flex-col gap-9.5 max-w-360 mx-auto pl-31.25 pr-43.75">
       <div className="flex items-center self-end gap-2.5 mt-7.5">
         <button
           onClick={toggleTheme}
@@ -53,7 +54,9 @@ function Header() {
             </>
           ) : (
             <>
-              <span className="text-brand-purple">ENGLISH</span>
+              SWITCH TO <span className={
+                  theme === "light" ? "text-brand-purple" : "text-light-purple"
+                }>ENGLISH</span>
             </>
           )}
         </span>
@@ -75,13 +78,13 @@ function Header() {
         </div>
 
         <nav className="flex items-center order-1 min-[702px]:order-2 gap-7.5 lg:gap-18.75">
-          <span className="cursor-pointer text-lg font-medium text-dim-gray">
+          <span onClick={()=>scrollToSection("skills")} className="cursor-pointer text-lg font-medium text-dim-gray">
             {lang === "en" ? "Skills" : "Beceriler"}
           </span>
-          <span className="cursor-pointer text-lg font-medium text-dim-gray">
+          <span onClick={()=>scrollToSection("projects")} className="cursor-pointer text-lg font-medium text-dim-gray">
             {lang === "en" ? "Projects" : "Projeler"}
           </span>
-          <button
+          <button onClick={()=>scrollToSection("footer")}
             className={`cursor-pointer px-8 py-3 border rounded-md font-bold text-lg transition-colors 
                 ${
                   theme === "light"

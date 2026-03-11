@@ -6,7 +6,7 @@ function Footer() {
   const footerData = siteData[lang].footerSection;
 
   return (
-    <section className={theme==="light"?
+    <section id="footer" className={theme==="light"?
       "bg-footer-gray":
       "bg-footer-dark"
       }>
