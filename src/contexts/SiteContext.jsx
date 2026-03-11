@@ -27,9 +27,16 @@ const SiteContextProvider = ({ children }) => {
   }, []);
 
   const toggleLang = () => {
-    setLang(lang === "en" ? "tr" : "en");
-    (lang==="tr") ? toast.success('Language changed to English') : toast('Dil Türkçe olarak değiştirildi') 
+  const nextLang = lang === "en" ? "tr" : "en";
+  setLang(nextLang);
+  
+  const messages = {
+    tr: "Dil Türkçe olarak değiştirildi",
+    en: "Language changed to English"
   };
+  
+  toast.success(messages[nextLang]); 
+};
 
   const toggleTheme = () => {
   const nextTheme = theme === "light" ? "dark" : "light";
