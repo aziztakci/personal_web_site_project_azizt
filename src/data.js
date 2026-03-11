@@ -1,6 +1,8 @@
 import heroImg from "./assets/images/hero_img.svg";
 import github from "./assets/images/github.svg";
 import linkedin from "./assets/images/linkedin.svg";
+import githubDark from "./assets/images/githubDark.svg";
+import linkedinDark from "./assets/images/linkedinDark.svg";
 
 export const data = {
   en: {
@@ -8,10 +10,10 @@ export const data = {
       name: "Almila Su",
       greeting: "Creative thinker",
       intro: "Minimalism lover",
-      profileImage: heroImg, 
+      profileImage: heroImg,
       socials: [
-        {name: "Github", img: github},
-        {name: "LinkedIn", img: linkedin}
+        { name: "Github", img: github, imgDark: githubDark },
+        { name: "LinkedIn", img: linkedin, imgDark: linkedinDark }
       ],
       ctaHTML:
         "Hi, I'm Almila. I'm a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let's shake hands with me.",
@@ -81,10 +83,10 @@ export const data = {
       name: "Almila Su",
       greeting: "Yaratıcı düşünür",
       intro: "Minimalizm aşığı",
-      profileImage: heroImg, 
+      profileImage: heroImg,
       socials: [
-        {name: "Github", img: github},
-        {name: "LinkedIn", img: linkedin}
+        { name: "Github", img: github, imgDark: githubDark },
+        { name: "LinkedIn", img: linkedin, imgDark: linkedinDark }
       ],
       ctaHTML:
         "Merhaba, ben Almila. Ben bir full-stack geliştiriciyim. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir frontend ürünleri geliştiren bir geliştirici arıyorsanız. Benimle el sıkışalım.",

@@ -20,6 +20,25 @@
   --color-brand-green: #00ab6b; /* Github yeşili */
   --color-brand-blue: #0077b5; /* Linkedin mavisi */
   --color-brand-dark: #0a0a14; /* Personal Blog rengi */
+
+  /* ---DARK MODE ANA RENKLER */
+  --color-main-gray: #AEBCCF; /* Başlıklar ve ana metin ve footerdaki "LETS WORK" alanı */
+  --color-deep-gray: #E1E1FF; /* Genel mor tonu - indigolar - */
+  --color-indigoo-subtle: #B7AAFF; /* Java Script React.js vb. yazılar, h3 olabilir */
+  --color-pure-white: #FFFF; /* Silik yazılar/açıklamalar */
+  
+
+  /* ---DARK MODE YARDIMCI RENKLER --- */
+  --color-background-dark: #252128; /* dark mode arka planı  */
+  --color-pure-black: #000000; /* hire me yazısı-datadan çekilen */
+  --color-bright-gray: #D9D9D9; /* Dark mode yazısı */
+  --color-light-purple: #BAB2E7; /*  Türkçe kısmı  */
+  --color-button-gray: #3A3A3A; /* Dark mode buton arka planı */
+  --color-brand-green-light: #17D18B; /* Github yeşili */
+  --color-light-blue: #0BA6F6; /* Linkedin mavisi */
+  --color-axios-purple: #8F88FF; /* react redux axios butonları */
+  
+  
 }
 
 
