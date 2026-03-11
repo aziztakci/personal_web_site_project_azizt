@@ -6,22 +6,22 @@ function Header() {
 
   return (
     <header className="flex flex-col gap-9.5">
-      <div className="flex items-center gap-2.5 self-end mt-7.5">
+      <div className="flex items-center self-end gap-2.5 mt-7.5">
         <button
           onClick={toggleTheme}
-          className={`relative w-13.75 h-6  rounded-full cursor-pointer transition-all duration-400 ${
+          className={`relative w-13.75 h-6 cursor-pointer rounded-full transition-all duration-400 ${
             theme === "light" ? "bg-brand-purple" : "bg-button-gray"
           }`}
         >
           <div
-            className={`absolute top-1 w-3.75 h-3.75 bg-accent-yellow rounded-full transition-all duration-400 
-            ${theme === "dark" ? "left-1.25 bg-transparent shadow-[inset_4px_0_0_0_#FDE047]" : "left-8.75"}`}
+            className={`absolute top-1 w-3.75 h-3.75 rounded-full transition-all duration-400 
+            ${theme === "dark" ? "left-1.25 bg-transparent shadow-[inset_4px_0_0_1px_#FDE047]" : "left-8.75 bg-accent-yellow"}`}
           ></div>
         </button>
 
         <span
           onClick={toggleTheme}
-          className={` text-[15px] font-bold cursor-pointer select-none ${
+          className={`cursor-pointer select-none text-[15px] font-bold ${
             theme === "light" ? "text-light-gray" : "text-bright-gray"
           }`}
         >
@@ -34,11 +34,11 @@ function Header() {
               : "GÜNDÜZ MODU"}
         </span>
 
-        <span className="text-light-gray mx-2 font-bold">|</span>
+        <span className="mx-2 font-bold text-light-gray">|</span>
 
         <span
           onClick={toggleLang}
-          className="text-light-gray text-[15px] font-bold cursor-pointer select-none"
+          className="cursor-pointer select-none text-[15px] font-bold text-light-gray"
         >
           {lang === "en" ? (
             <>
@@ -59,14 +59,14 @@ function Header() {
         </span>
       </div>
 
-      <div className="flex justify-between items-center w-full">
+      <div className="flex flex-col items-center w-full gap-10 min-[702px]:flex-row min-[702px]:justify-between">
         <div
-          className={`w-15.5 h-15.5 flex items-center justify-center rounded-full transition-colors ${
+          className={`flex items-center justify-center w-15.5 h-15.5 order-2 min-[702px]:order-1 rounded-full transition-colors ${
             theme === "light" ? "bg-soft-purple" : "bg-brand-purple"
           }`}
         >
           <span
-            className={`font-bold text-2xl inline-block rotate-30 ${
+            className={`inline-block rotate-30 font-bold text-2xl ${
               theme === "light" ? "text-[#7B61FF]" : "text-axios-purple"
             }`}
           >
@@ -74,22 +74,22 @@ function Header() {
           </span>
         </div>
 
-        <nav className="flex gap-7.5 md:gap-18.75 items-center">
-          <span className="font-medium text-lg cursor-pointer text-dim-gray">
+        <nav className="flex items-center order-1 min-[702px]:order-2 gap-7.5 lg:gap-18.75">
+          <span className="cursor-pointer text-lg font-medium text-dim-gray">
             {lang === "en" ? "Skills" : "Beceriler"}
           </span>
-          <span className=" text-dim-gray font-medium text-lg cursor-pointer">
+          <span className="cursor-pointer text-lg font-medium text-dim-gray">
             {lang === "en" ? "Projects" : "Projeler"}
           </span>
           <button
-            className={` border px-8 py-3 rounded-md font-bold text-lg cursor-pointer 
+            className={`cursor-pointer px-8 py-3 border rounded-md font-bold text-lg transition-colors 
                 ${
                   theme === "light"
-                    ? "text-brand-purple hover:bg-brand-purple hover:text-soft-purple transition-colors  border-brand-purple"
-                    : "text-deep-purple bg-pure-white hover:bg-soft-purple hover:text-[#1F2937] transition-colors  border-deep-purple"
+                    ? "text-brand-purple border-brand-purple hover:bg-brand-purple hover:text-soft-purple"
+                    : "text-deep-purple bg-pure-white border-deep-purple hover:bg-soft-purple hover:text-[#1F2937]"
                 }`}
           >
-            {lang === "en" ? "Hire me" : "Beni işe al"}
+            {lang === "en" ? "Hire me" : "İşe al"}
           </button>
         </nav>
       </div>
