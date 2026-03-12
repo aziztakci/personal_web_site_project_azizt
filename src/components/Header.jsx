@@ -79,7 +79,7 @@ function Header() {
 
         <nav className="flex items-center order-1 min-[702px]:order-2 gap-7.5 lg:gap-18.75">
           <span onClick={()=>scrollToSection("skills")} className="cursor-pointer text-lg font-medium text-dim-gray">
-            {lang === "en" ? "Skills" : "Beceriler"}
+            {lang === "en" ? "Skills" : "Yetenekler"}
           </span>
           <span onClick={()=>scrollToSection("projects")} className="cursor-pointer text-lg font-medium text-dim-gray">
             {lang === "en" ? "Projects" : "Projeler"}
