@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { data as initialData } from "../data";
+import { useAxios } from "../hooks/useAxios";
 import { toast } from "react-toastify";
 
 export const SiteContext = createContext();
@@ -10,7 +11,27 @@ const SiteContextProvider = ({ children }) => {
   const [theme, setTheme] = useLocalStorage("theme", "light");
   const [siteData, setSiteData] = useState(initialData);
 
-  {/* isVisible ve useEffect yukarı çıkma butonu için hazırlandı */}
+  const { sendRequest, loading } = useAxios();
+
+ useEffect(() => {
+  sendRequest("post", "https://dummyjson.com/posts/add", {
+    title: "Portfolio Sync",
+    userId: 5,
+    body: initialData, 
+  })
+    .then((res) => {
+      console.log("API bağlantısı başarılı! Veri senkronize ediliyor...");
+      if (res.body) {
+        setSiteData(res.body); 
+        console.log("Site verisi API'den gelen veriyle güncellendi.");
+      }
+    })
+    .catch((err) => {
+      console.error("API hatası! Yerel verilerle devam ediliyor:", err);
+    });
+}, []);
+
+  {/* isVisible ve hemen altındaki useEffect yukarı çıkma butonu için hazırlandı */}
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -69,13 +90,20 @@ const SiteContextProvider = ({ children }) => {
     toggleTheme,
     siteData,
     scrollToSection,
-    isVisible
+    isVisible,
+    loading
   };
 
   return (
     <SiteContext.Provider value={values}>
-      <div className={`min-w-160 ${theme === "dark" ? "bg-background-dark" : "bg-white"}`}>
-        {children}
+      <div className={`${theme === "dark" ? "bg-background-dark" : "bg-white"}`}>
+        {loading ? (
+          <div className="flex h-screen items-center justify-center text-brand-purple">
+            Loading...
+          </div>
+        ) : (
+          children
+        )}
       </div>
     </SiteContext.Provider>
   );
